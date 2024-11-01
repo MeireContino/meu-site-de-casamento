@@ -1,0 +1,38 @@
+body 
+{ background-image: url('imagens/aliancas.jpeg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+} 
+.principal { 
+    width: 100%; 
+    display: flex; 
+    flex-direction: row; justify-content: space-between; /* Distribui espaço uniformemente entre as colunas */ 
+} 
+.coluna1, .coluna2, .coluna3, .coluna4, .coluna5 
+{ 
+    flex-grow: 1; 
+    align-items: center; 
+    margin: 1%; 
+    text-align: center; /* Centraliza o texto nas colunas */ 
+} 
+img {
+    width: 100%;
+    height: auto; 
+    margin-bottom: 10px; /* Adiciona espaçamento entre as imagens */ 
+} 
+.coluna2 img, .coluna5 img { 
+    margin-bottom: 20px; /* Aumenta o espaçamento apenas para as imagens das colunas 2 e 5 */ 
+} 
+h1 { 
+    text-align: center;
+     font-size: 4.5em; 
+     background: linear-gradient(90deg, #ffcc00, #ff66cc); 
+     -webkit-background-clip: text; color: transparent; 
+     -webkit-text-fill-color: transparent; /* Faz com que a cor do texto não seja preenchida */ 
+     -webkit-background-clip: text; /* Clipa a imagem de fundo ao texto */ 
+    } 
+    .imagem-grande { 
+        width: 170%; 
+        height: auto; 
+    }
