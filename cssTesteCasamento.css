@@ -7,7 +7,9 @@ body
 .principal { 
     width: 100%; 
     display: flex; 
-    flex-direction: row; justify-content: space-between; /* Distribui espaço uniformemente entre as colunas */ 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribui espaço uniformemente entre as colunas */ 
 } 
 .coluna1, .coluna2, .coluna3, .coluna4, .coluna5 
 { 
@@ -36,3 +38,14 @@ h1 {
         width: 170%; 
         height: auto; 
     }
+/* CSS responsivo para dispositivos móveis */ 
+@media (max-width: 768px) { 
+    h1 { 
+        font-size: 2em; /* Ajusta o tamanho do título em dispositivos móveis */ 
+       } 
+    .coluna1, .coluna2, .coluna3, .coluna4, .coluna5 { 
+        flex-basis: 100%; /* As colunas ocupam 100% da largura */ 
+    } 
+    img { width: 90%; /* Reduz o tamanho das imagens em dispositivos móveis */ 
+        } 
+}
