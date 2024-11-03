@@ -21,36 +21,39 @@ img {
     height: auto; 
     margin-bottom: 10px; /* Adiciona espaçamento entre as imagens */ 
 } 
-.coluna2 img, .coluna5 img { 
-    margin-bottom: 20px; /* Aumenta o espaçamento apenas para as imagens das colunas 2 e 5 */ 
-} 
+.coluna3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagem-grande{
+    max-width: 120%;
+    height: auto;
+    margin:20px auto;
+    display:block;
+}
 h1 { 
     text-align: center;
      font-size: 4.5em; 
      background: linear-gradient(90deg, #ffcc00, #ff66cc); 
      -webkit-background-clip: text; 
     color: transparent; 
-     -webkit-text-fill-color: transparent; /* Faz com que a cor do texto não seja preenchida */ 
-     -webkit-background-clip: text; /* Clipa a imagem de fundo ao texto */ 
     } 
-    .imagem-grande { 
-        max-width: 150%; 
-        height: auto;
-        margin: 20px auto;     
-    }
-.coluna3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*CSS responsivo para dispositivos móveis*/
+    @media(max-width:768px)
 }
-/* CSS responsivo para dispositivos móveis */ 
-@media (max-width: 768px) { 
-    h1 { 
-        font-size: 2em; /* Ajusta o tamanho do título em dispositivos móveis */ 
-       } 
+h1{
+    font-size:2em;/*reduz o tamanho do título em dispositivos móveis*/
+    }
+.principal{
+    overflow-x:auto;/*habilita rolagem horizontal para ver todas as colunas lado a lado*/
+    gap:1%;
+} 
     .coluna1, .coluna2, .coluna3, .coluna4, .coluna5 { 
-        flex-basis: 100%; /* As colunas ocupam 100% da largura */ 
+        flex-basis: 40%; /* Reduz o tamanho em telas menores */ 
+        min-width:200px;
     } 
-    img { width: 90%; /* Reduz o tamanho das imagens em dispositivos móveis */ 
+    img {
+        max-width: 90%; /* Reduz o tamanho das imagens em dispositivos móveis */ 
         } 
 }
