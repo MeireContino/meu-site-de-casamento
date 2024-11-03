@@ -5,21 +5,19 @@ body
     background-position: center; 
 } 
 .principal { 
-    width: 100%; 
-    display: flex; 
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Distribui espaço uniformemente entre as colunas */ 
 } 
-.coluna1, .coluna2, .coluna3, .coluna4, .coluna5 
-{ 
+.coluna1, .coluna2, .coluna3, .coluna4, .coluna5 {
+    flex-basis: 18%; /*cada coluna ocupa 18% do espaço, ajustando para 5 colunas*/
     flex-grow: 1; 
     align-items: center; 
     margin: 1%; 
     text-align: center; /* Centraliza o texto nas colunas */ 
 } 
 img {
-    width: 100%;
+    max-width: 100%; /*Garante que as imagens não ultrapassem 100%*/
     height: auto; 
     margin-bottom: 10px; /* Adiciona espaçamento entre as imagens */ 
 } 
