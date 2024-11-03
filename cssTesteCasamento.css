@@ -40,8 +40,7 @@ h1 {
     color: transparent; 
     } 
 /*CSS responsivo para dispositivos móveis*/
-    @media(max-width:768px)
-}
+    @media(max-width:768px){
 h1{
     font-size:2em;/*reduz o tamanho do título em dispositivos móveis*/
     }
