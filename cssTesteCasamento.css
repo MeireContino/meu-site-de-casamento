@@ -33,8 +33,9 @@ h1 {
      -webkit-background-clip: text; /* Clipa a imagem de fundo ao texto */ 
     } 
     .imagem-grande { 
-        width: 170%; 
-        height: auto; 
+        width: 120%; 
+        height: auto;
+        margin-left: -10%;
     }
 /* CSS responsivo para dispositivos móveis */ 
 @media (max-width: 768px) { 
@@ -46,4 +47,8 @@ h1 {
     } 
     img { width: 90%; /* Reduz o tamanho das imagens em dispositivos móveis */ 
         } 
+    .imagem-grande {
+        max-width: 150%;
+        margin-left: -25%;
+    }
 }
